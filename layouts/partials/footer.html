@@ -9,7 +9,6 @@
                             <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" class="h-6">
                         {{ end }}
                     </a>
-                    <span class="text-xl font-bold text-gray-900">{{ .Site.Title }}</span>
                 </div>
                 <div class="flex space-x-3 p-2">
                     {{ with .Site.Params.social.linkedin }}
@@ -130,9 +129,6 @@
                 <p class="text-gray-600 text-sm">
                     © {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.
                 </p>
-                <a href="https://chaoming.li" class="text-sm text-gray-600 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
-                    Designed by Chaoming Li
-                </a>
             </div>
         </div>
     </div>

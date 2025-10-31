@@ -53,7 +53,7 @@
                 {{ if not $headerConfig.hideButtons }}
                 <div class="hidden md:flex items-center space-x-4">
                     {{ with $headerConfig.buttons.signIn }}
-                    <a href="{{ .url | default "#" }}" class="{{ with .class }}{{ . }}{{ else }}inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600{{ end }}">
+                    <a href="{{ .url | default "#" }}" {{ with .target }}target="{{ . }}" rel="noopener noreferrer"{{ end }} class="{{ with .class }}{{ . }}{{ else }}inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600{{ end }}">
                         {{ .text | default "Sign In" }}
                     </a>
                     {{ end }}
@@ -122,7 +122,7 @@
                 {{ if not $headerConfig.hideButtons }}
                 <div class="pt-4 space-y-4">
                     {{ with $headerConfig.buttons.signIn }}
-                    <a href="{{ .url | default "#" }}" class="{{ with .mobileClass }}{{ . }}{{ else }}block text-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600{{ end }}">
+                    <a href="{{ .url | default "#" }}" {{ with .target }}target="{{ . }}" rel="noopener noreferrer"{{ end }} class="{{ with .mobileClass }}{{ . }}{{ else }}block text-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600{{ end }}">
                         {{ .text | default "Sign In" }}
                     </a>
                     {{ end }}

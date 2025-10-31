@@ -54,13 +54,13 @@
                 <div class="hidden md:flex items-center space-x-4">
                     {{ with $headerConfig.buttons.signIn }}
                     <a href="{{ .url | default "#" }}" class="{{ with .class }}{{ . }}{{ else }}inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600{{ end }}">
-                        {{ .text | default "Sign in" }}
+                        {{ .text | default "Sign In" }}
                     </a>
                     {{ end }}
                     
                     {{ with $headerConfig.buttons.getStarted }}
                     <a href="{{ .url | default "#" }}" class="{{ with .class }}{{ . }}{{ else }}inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out bg-primary-600 text-white hover:bg-primary-700 hover:scale-105{{ end }}">
-                        {{ .text | default "Get Started" }}
+                        {{ .text | default "Sign Up" }}
                     </a>
                     {{ end }}
                 </div>
@@ -123,13 +123,13 @@
                 <div class="pt-4 space-y-4">
                     {{ with $headerConfig.buttons.signIn }}
                     <a href="{{ .url | default "#" }}" class="{{ with .mobileClass }}{{ . }}{{ else }}block text-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600{{ end }}">
-                        {{ .text | default "Sign in" }}
+                        {{ .text | default "Sign In" }}
                     </a>
                     {{ end }}
                     
                     {{ with $headerConfig.buttons.getStarted }}
                     <a href="{{ .url | default "#" }}" class="{{ with .mobileClass }}{{ . }}{{ else }}block text-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out bg-primary-600 text-white hover:bg-primary-700 hover:scale-105{{ end }}">
-                        {{ .text | default "Get Started" }}
+                        {{ .text | default "Sign Up" }}
                     </a>
                     {{ end }}
                 </div>

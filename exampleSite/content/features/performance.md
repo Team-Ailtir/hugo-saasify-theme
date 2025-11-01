@@ -1,5 +1,6 @@
 ---
 title: "Lightning-Fast Performance"
+date: 2024-01-10
 description: "Leverage Hugo's blazing-fast build times and optimized output. Your website loads instantly, providing an exceptional user experience."
 layout: "feature"
 badge: "Performance"

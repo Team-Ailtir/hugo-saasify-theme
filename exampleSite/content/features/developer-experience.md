@@ -1,5 +1,6 @@
 ---
 title: "Developer Experience"
+date: 2024-01-20
 description: "Enjoy a seamless development experience with hot reload, component-based architecture, and clean, maintainable code."
 layout: "feature"
 badge: "Development"

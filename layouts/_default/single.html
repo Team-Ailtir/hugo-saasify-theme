@@ -75,12 +75,5 @@
             {{ end }}
         </div>
     </nav>
-
-    <!-- Full-width CTA Section -->
-    {{ if and .Site.Params.blog.cta.enable .Site.Params.cta.enable }}
-        <div class="mt-16">
-            {{ partial "components/cta.html" . }}
-        </div>
-    {{ end }}
 </div>
 {{ end }}
